@@ -7,7 +7,7 @@ interface Color {
 // @ts-ignore
 const color: Color = {
 	red: 20,
-	blue: 10,
+	blue: 20,
 	green: 10
 };
 
