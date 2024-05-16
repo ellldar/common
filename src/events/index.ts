@@ -4,3 +4,5 @@ export * from './subjects';
 
 export * from './ticket-events/ticket-created-event';
 export * from './ticket-events/ticket-updated-event';
+
+export * from './types/order-status';
