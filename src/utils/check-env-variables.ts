@@ -1,4 +1,13 @@
+const data = {
+	'tickets': ['JWT_KEY', 'MONGO_URI', 'NATS_CLUSTER_ID', 'NATS_CLIENT_ID', 'NATS_URL'],
+	'orders': ['JWT_KEY', 'MONGO_URI', 'NATS_CLUSTER_ID', 'NATS_CLIENT_ID', 'NATS_URL'],
+	'expiration': ['NATS_CLUSTER_ID', 'NATS_CLIENT_ID', 'NATS_URL'],
+};
+
+// Need to come back here and make a more generic Env Variable Checker
+
 export const CheckEnvVariables = () => {
+
 	if (!process.env.JWT_KEY) {
 		throw new Error("JWT_KEY must be defined");
 	}
